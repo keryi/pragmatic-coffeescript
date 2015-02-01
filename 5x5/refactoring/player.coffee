@@ -29,7 +29,7 @@ class Player
     @dictionary.grid.swap swapCoordinates
     @moveCount++
     result = scoreMove @dictionary, swapCoordinates
-    @score = result.moveScore
+    @score += result.moveScore
     result
 
   toString: ->
